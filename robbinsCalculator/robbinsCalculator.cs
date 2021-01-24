@@ -29,20 +29,37 @@ namespace robbinsCalculator
         }
         private void robbinsCalculator_KeyPress(object sender, KeyPressEventArgs e)
         {
-            switch ((int)e.KeyChar) // statement to handle each key press
+             switch ((int)e.KeyChar) // statement to handle each key press
             {
-                case 48: //ascii code = 0 
+                case 48: // 0 
                          //want to save as an operand of the equation
-                    break; //need break statement so it doesn't accidentally run other statements
-                case 49: //ascii code = i
+                         //btn_Click(e.KeyChar, EventArgs e);
+                    val1 = 0;                      
+                    break; 
+                case 49: //1
+                    val1 = 1;
+                    //e.Handled = true; 
                     break;
-                case 50: //ascii code = i
+                case 50: //2
                     break;
-                case 51: //ascii code = i
+                case 51: //3
                     break;
+                case 52: //4
+                    break; 
+                case 53: //5
+                    break;
+                case 54: //6
+                    break;
+                case 55: //7
+                    break;
+                case 56: //8
+                    break;
+                case 57: //9
+                    break; 
 
-                    // case 55: //ascii code = 7
+
             }
+     
 
         }
 
