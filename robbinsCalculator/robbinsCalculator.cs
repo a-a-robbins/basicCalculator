@@ -139,11 +139,21 @@ namespace robbinsCalculator
 
         private void btn_Operator(object sender, EventArgs e)
         {
-            op_press = true;
             Button o = (Button)sender;
-            op = o.Text;
-            val1 = float.Parse(txtIO.Text);
-            lblEq.Text = val1 + " " + op;
+            if (val1 != 0)
+            {
+                btnCalc.PerformClick();
+                op_press = true;
+                op = o.Text;
+                lblEq.Text = val1 + " " + op;
+            }
+            else
+            {
+                op_press = true;
+                op = o.Text;
+                val1 = float.Parse(txtIO.Text);
+                lblEq.Text = val1 + " " + op;
+            }
         }
 
         private void btn_Calculate(object sender, EventArgs e)
@@ -177,13 +187,13 @@ namespace robbinsCalculator
                     }
                     txtIO.Text = (1 / val1).ToString();
                     break;
-                case "Sqrt": //FIX ME
+                case "sqrt": //FIX ME
                     if(val1 < 0)
                     {
                         txtIO.Text = "Sorry, we do not deal with i here :(";
                         break; 
                     }
-                    txtIO.Text = Math.Sqrt(val1).ToString();
+                    txtIO.Text = (Math.Sqrt(val1)).ToString();
                     break;
                 case "x^y":
                     txtIO.Text = (Math.Pow(val1, float.Parse(txtIO.Text))).ToString();
@@ -197,6 +207,8 @@ namespace robbinsCalculator
                 default:
                     break;
             }
+            val1 = float.Parse(txtIO.Text);
+            op = ""; 
             op_press = true; 
         }
 
