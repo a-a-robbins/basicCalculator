@@ -67,7 +67,7 @@ namespace robbinsCalculator
             this.btnCalc.ForeColor = System.Drawing.Color.Black;
             this.btnCalc.Location = new System.Drawing.Point(14, 361);
             this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(252, 56);
+            this.btnCalc.Size = new System.Drawing.Size(257, 63);
             this.btnCalc.TabIndex = 0;
             this.btnCalc.Text = "Calculate!";
             this.btnCalc.UseVisualStyleBackColor = false;
@@ -78,10 +78,10 @@ namespace robbinsCalculator
             this.txtIO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIO.ForeColor = System.Drawing.Color.Black;
-            this.txtIO.Location = new System.Drawing.Point(14, 22);
+            this.txtIO.Location = new System.Drawing.Point(12, 19);
             this.txtIO.Multiline = true;
             this.txtIO.Name = "txtIO";
-            this.txtIO.Size = new System.Drawing.Size(252, 60);
+            this.txtIO.Size = new System.Drawing.Size(257, 67);
             this.txtIO.TabIndex = 1;
             this.txtIO.Text = "0";
             this.txtIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -94,7 +94,7 @@ namespace robbinsCalculator
             this.btnDel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDel.Location = new System.Drawing.Point(229, 101);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(37, 47);
+            this.btnDel.Size = new System.Drawing.Size(42, 54);
             this.btnDel.TabIndex = 3;
             this.btnDel.Text = "del";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -107,7 +107,7 @@ namespace robbinsCalculator
             this.btn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn1.Location = new System.Drawing.Point(14, 163);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(37, 47);
+            this.btn1.Size = new System.Drawing.Size(42, 54);
             this.btn1.TabIndex = 4;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
@@ -120,7 +120,7 @@ namespace robbinsCalculator
             this.btn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn2.Location = new System.Drawing.Point(57, 163);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(37, 47);
+            this.btn2.Size = new System.Drawing.Size(42, 54);
             this.btn2.TabIndex = 5;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
@@ -133,7 +133,7 @@ namespace robbinsCalculator
             this.btn3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn3.Location = new System.Drawing.Point(100, 163);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(37, 47);
+            this.btn3.Size = new System.Drawing.Size(42, 54);
             this.btn3.TabIndex = 6;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
@@ -146,7 +146,7 @@ namespace robbinsCalculator
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnAdd.Location = new System.Drawing.Point(186, 163);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(37, 47);
+            this.btnAdd.Size = new System.Drawing.Size(42, 54);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -159,7 +159,7 @@ namespace robbinsCalculator
             this.btnMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMinus.Location = new System.Drawing.Point(229, 163);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(37, 47);
+            this.btnMinus.Size = new System.Drawing.Size(42, 54);
             this.btnMinus.TabIndex = 8;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = false;
@@ -172,7 +172,7 @@ namespace robbinsCalculator
             this.btnPi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnPi.Location = new System.Drawing.Point(14, 101);
             this.btnPi.Name = "btnPi";
-            this.btnPi.Size = new System.Drawing.Size(37, 47);
+            this.btnPi.Size = new System.Drawing.Size(42, 54);
             this.btnPi.TabIndex = 9;
             this.btnPi.Text = "pi";
             this.btnPi.UseVisualStyleBackColor = false;
@@ -185,7 +185,7 @@ namespace robbinsCalculator
             this.btnSquare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSquare.Location = new System.Drawing.Point(143, 227);
             this.btnSquare.Name = "btnSquare";
-            this.btnSquare.Size = new System.Drawing.Size(37, 47);
+            this.btnSquare.Size = new System.Drawing.Size(42, 54);
             this.btnSquare.TabIndex = 10;
             this.btnSquare.Text = "x^2";
             this.btnSquare.UseVisualStyleBackColor = false;
@@ -198,7 +198,7 @@ namespace robbinsCalculator
             this.btn6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn6.Location = new System.Drawing.Point(100, 227);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(37, 47);
+            this.btn6.Size = new System.Drawing.Size(42, 54);
             this.btn6.TabIndex = 11;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
@@ -211,7 +211,7 @@ namespace robbinsCalculator
             this.btn5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn5.Location = new System.Drawing.Point(57, 227);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(37, 47);
+            this.btn5.Size = new System.Drawing.Size(42, 54);
             this.btn5.TabIndex = 12;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
@@ -224,7 +224,7 @@ namespace robbinsCalculator
             this.btn4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn4.Location = new System.Drawing.Point(14, 227);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(37, 47);
+            this.btn4.Size = new System.Drawing.Size(42, 54);
             this.btn4.TabIndex = 13;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
@@ -237,7 +237,7 @@ namespace robbinsCalculator
             this.btnPow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnPow.Location = new System.Drawing.Point(143, 163);
             this.btnPow.Name = "btnPow";
-            this.btnPow.Size = new System.Drawing.Size(37, 47);
+            this.btnPow.Size = new System.Drawing.Size(42, 54);
             this.btnPow.TabIndex = 14;
             this.btnPow.Text = "x^y";
             this.btnPow.UseVisualStyleBackColor = false;
@@ -250,7 +250,7 @@ namespace robbinsCalculator
             this.btnSqrt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSqrt.Location = new System.Drawing.Point(57, 101);
             this.btnSqrt.Name = "btnSqrt";
-            this.btnSqrt.Size = new System.Drawing.Size(37, 47);
+            this.btnSqrt.Size = new System.Drawing.Size(42, 54);
             this.btnSqrt.TabIndex = 15;
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = false;
@@ -263,7 +263,7 @@ namespace robbinsCalculator
             this.btn1DivX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn1DivX.Location = new System.Drawing.Point(100, 101);
             this.btn1DivX.Name = "btn1DivX";
-            this.btn1DivX.Size = new System.Drawing.Size(37, 47);
+            this.btn1DivX.Size = new System.Drawing.Size(42, 54);
             this.btn1DivX.TabIndex = 16;
             this.btn1DivX.Text = "1/x";
             this.btn1DivX.UseVisualStyleBackColor = false;
@@ -276,7 +276,7 @@ namespace robbinsCalculator
             this.btnC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnC.Location = new System.Drawing.Point(143, 101);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(37, 47);
+            this.btnC.Size = new System.Drawing.Size(42, 54);
             this.btnC.TabIndex = 17;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = false;
@@ -289,7 +289,7 @@ namespace robbinsCalculator
             this.btnCE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnCE.Location = new System.Drawing.Point(186, 101);
             this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(37, 47);
+            this.btnCE.Size = new System.Drawing.Size(42, 54);
             this.btnCE.TabIndex = 18;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = false;
@@ -302,7 +302,7 @@ namespace robbinsCalculator
             this.btnMult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMult.Location = new System.Drawing.Point(186, 227);
             this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(37, 47);
+            this.btnMult.Size = new System.Drawing.Size(42, 54);
             this.btnMult.TabIndex = 19;
             this.btnMult.Text = "*";
             this.btnMult.UseVisualStyleBackColor = false;
@@ -315,7 +315,7 @@ namespace robbinsCalculator
             this.btnDiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDiv.Location = new System.Drawing.Point(229, 227);
             this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(37, 47);
+            this.btnDiv.Size = new System.Drawing.Size(42, 54);
             this.btnDiv.TabIndex = 20;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = false;
@@ -328,7 +328,7 @@ namespace robbinsCalculator
             this.btnDec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDec.Location = new System.Drawing.Point(229, 294);
             this.btnDec.Name = "btnDec";
-            this.btnDec.Size = new System.Drawing.Size(37, 47);
+            this.btnDec.Size = new System.Drawing.Size(42, 54);
             this.btnDec.TabIndex = 26;
             this.btnDec.Text = ".";
             this.btnDec.UseVisualStyleBackColor = false;
@@ -341,7 +341,7 @@ namespace robbinsCalculator
             this.btnSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSign.Location = new System.Drawing.Point(186, 294);
             this.btnSign.Name = "btnSign";
-            this.btnSign.Size = new System.Drawing.Size(37, 47);
+            this.btnSign.Size = new System.Drawing.Size(42, 54);
             this.btnSign.TabIndex = 25;
             this.btnSign.Text = "+/-";
             this.btnSign.UseVisualStyleBackColor = false;
@@ -354,7 +354,7 @@ namespace robbinsCalculator
             this.btn7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn7.Location = new System.Drawing.Point(14, 294);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(37, 47);
+            this.btn7.Size = new System.Drawing.Size(42, 54);
             this.btn7.TabIndex = 24;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
@@ -367,7 +367,7 @@ namespace robbinsCalculator
             this.btn8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn8.Location = new System.Drawing.Point(57, 294);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(37, 47);
+            this.btn8.Size = new System.Drawing.Size(42, 54);
             this.btn8.TabIndex = 23;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
@@ -380,7 +380,7 @@ namespace robbinsCalculator
             this.btn9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn9.Location = new System.Drawing.Point(100, 294);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(37, 47);
+            this.btn9.Size = new System.Drawing.Size(42, 54);
             this.btn9.TabIndex = 22;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
@@ -393,7 +393,7 @@ namespace robbinsCalculator
             this.btn0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn0.Location = new System.Drawing.Point(143, 294);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(37, 47);
+            this.btn0.Size = new System.Drawing.Size(42, 54);
             this.btn0.TabIndex = 21;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
@@ -402,12 +402,12 @@ namespace robbinsCalculator
             // lblEq
             // 
             this.lblEq.AutoSize = true;
-            this.lblEq.BackColor = System.Drawing.Color.Black;
-            this.lblEq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblEq.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblEq.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEq.ForeColor = System.Drawing.Color.Black;
             this.lblEq.Location = new System.Drawing.Point(16, 25);
             this.lblEq.Name = "lblEq";
-            this.lblEq.Size = new System.Drawing.Size(0, 16);
+            this.lblEq.Size = new System.Drawing.Size(0, 17);
             this.lblEq.TabIndex = 27;
             // 
             // robbinsCalculator
@@ -415,7 +415,7 @@ namespace robbinsCalculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(280, 444);
+            this.ClientSize = new System.Drawing.Size(284, 442);
             this.Controls.Add(this.lblEq);
             this.Controls.Add(this.btnDec);
             this.Controls.Add(this.btnSign);

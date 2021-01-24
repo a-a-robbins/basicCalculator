@@ -80,6 +80,9 @@ namespace robbinsCalculator
                 case 2386: //Enter key
                     btnCalc.PerformClick();
                     break;
+                case 8: //Bkspc
+                    btnDel.PerformClick(); 
+                    break;
                 default:
                     break;
 
@@ -121,10 +124,13 @@ namespace robbinsCalculator
                     break;
                 case "C":
                     txtIO.Clear();
+                    lblEq.Text = " "; 
                     txtIO.Text = "0"; 
                     break;
                 case "Del":
-                    //FIX ME: need to just backspace
+                    //txtIO.Text = txtIO.Text.Remove(txtIO.Text.Length - 1); 
+                    int x = txtIO.TextLength - 1;
+                    //txtIO.Text = txtIO.Text.Replace(x, null); 
                     break;
                 default:
                     break; 
