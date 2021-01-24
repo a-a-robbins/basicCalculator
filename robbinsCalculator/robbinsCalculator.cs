@@ -29,34 +29,59 @@ namespace robbinsCalculator
         }
         private void robbinsCalculator_KeyPress(object sender, KeyPressEventArgs e)
         {
-             switch ((int)e.KeyChar) // statement to handle each key press
+             switch ((int)e.KeyChar) 
             {
                 case 48: // 0 
-                         //want to save as an operand of the equation
-                         //btn_Click(e.KeyChar, EventArgs e);
-                    val1 = 0;                      
+                         
+                    btn0.PerformClick();                      
                     break; 
                 case 49: //1
-                    val1 = 1;
-                    //e.Handled = true; 
+                    btn1.PerformClick();
                     break;
                 case 50: //2
+                    btn2.PerformClick();
                     break;
                 case 51: //3
+                    btn3.PerformClick();
                     break;
                 case 52: //4
+                    btn4.PerformClick();
                     break; 
                 case 53: //5
+                    btn5.PerformClick(); 
                     break;
                 case 54: //6
+                    btn6.PerformClick(); 
                     break;
                 case 55: //7
+                    btn7.PerformClick();
                     break;
                 case 56: //8
+                    btn8.PerformClick();
                     break;
                 case 57: //9
-                    break; 
-
+                    btn9.PerformClick();
+                    break;
+                case 42: //*
+                    btnMult.PerformClick();
+                    break;
+                case 43: //+
+                    btnAdd.PerformClick();
+                    break;
+                case 45: //-
+                    btnMinus.PerformClick();
+                    break;
+                case 46: //.
+                    btnDec.PerformClick();
+                    break;
+                case 47: // /
+                    btnDiv.PerformClick();
+                    break;
+                case 2386: //Enter key
+                    btnCalc.PerformClick();
+                    break;
+                default:
+                    break;
 
             }
      
@@ -81,6 +106,7 @@ namespace robbinsCalculator
             {
                 txtIO.Text = txtIO.Text + b.Text;
             }
+           
             
             
         }

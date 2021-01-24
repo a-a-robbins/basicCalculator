@@ -29,6 +29,7 @@ namespace robbinsCalculator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(robbinsCalculator));
             this.btnCalc = new System.Windows.Forms.Button();
             this.txtIO = new System.Windows.Forms.TextBox();
             this.btnDel = new System.Windows.Forms.Button();
@@ -332,6 +333,7 @@ namespace robbinsCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(280, 444);
             this.Controls.Add(this.lblEq);
             this.Controls.Add(this.btnDec);
