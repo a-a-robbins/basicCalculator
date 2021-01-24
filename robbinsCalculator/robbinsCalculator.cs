@@ -12,7 +12,7 @@ namespace robbinsCalculator
 {
     public partial class robbinsCalculator : Form
     {
-        Double val1 = 0;
+        float val1 = 0;
         String op = "";
         bool op_press = false;
 
@@ -24,11 +24,29 @@ namespace robbinsCalculator
        private void robbinsCalculator_Load(object sender, EventArgs e)
         {
             KeyPreview = true;
-            //KeyPress += robbinsCalculator_KeyPress;
+            KeyPress += robbinsCalculator_KeyPress;
+
+        }
+        private void robbinsCalculator_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch ((int)e.KeyChar) // statement to handle each key press
+            {
+                case 48: //ascii code = 0 
+                         //want to save as an operand of the equation
+                    break; //need break statement so it doesn't accidentally run other statements
+                case 49: //ascii code = i
+                    break;
+                case 50: //ascii code = i
+                    break;
+                case 51: //ascii code = i
+                    break;
+
+                    // case 55: //ascii code = 7
+            }
 
         }
 
-       
+
         private void btn_Click(object sender, EventArgs e)
         {
             if(txtIO.Text == "0" ||op_press == true)
@@ -37,7 +55,17 @@ namespace robbinsCalculator
             }
             op_press = false; 
             Button b = (Button)sender;
-            txtIO.Text = txtIO.Text + b.Text;
+            if (b.Text == "pi")
+            {
+                val1 = 3.141592654F;
+                txtIO.Text = "3.141592654";
+            }
+            else
+            {
+                txtIO.Text = txtIO.Text + b.Text;
+            }
+            
+            
         }
 
         private void btn_Clear(object sender, EventArgs e)
@@ -65,7 +93,7 @@ namespace robbinsCalculator
             op_press = true;
             Button o = (Button)sender;
             op = o.Text;
-            val1 = Double.Parse(txtIO.Text);
+            val1 = float.Parse(txtIO.Text);
             lblEq.Text = val1 + " " + op;
         }
 
@@ -76,21 +104,21 @@ namespace robbinsCalculator
             switch (op)
             {
                 case "+":
-                    txtIO.Text = (val1 + Double.Parse(txtIO.Text)).ToString(); 
+                    txtIO.Text = (val1 + float.Parse(txtIO.Text)).ToString();
                     break;
                 case "-":
-                    txtIO.Text = (val1 - Double.Parse(txtIO.Text)).ToString();
+                    txtIO.Text = (val1 - float.Parse(txtIO.Text)).ToString();
                     break;
                 case "*":
-                    txtIO.Text = (val1 * Double.Parse(txtIO.Text)).ToString();
+                    txtIO.Text = (val1 * float.Parse(txtIO.Text)).ToString();
                     break;
                 case "/":
-                    if (Double.Parse(txtIO.Text) == 0)
+                    if (float.Parse(txtIO.Text) == 0)
                     {
                         txtIO.Text = "Cannot divide by zero";
                         break;
                     }
-                    txtIO.Text = (val1 / Double.Parse(txtIO.Text)).ToString();
+                    txtIO.Text = (val1 / float.Parse(txtIO.Text)).ToString();
                     break;
                 case "1/x":
                     if(val1 == 0)
@@ -101,18 +129,26 @@ namespace robbinsCalculator
                     txtIO.Text = (1 / val1).ToString();
                     break;
                 case "Sqrt": //FIX ME
+                    if(val1 < 0)
+                    {
+                        txtIO.Text = "Sorry, we do not deal with i here :(";
+                        break; 
+                    }
                     txtIO.Text = Math.Sqrt(val1).ToString();
                     break;
                 case "x^y":
-                    txtIO.Text = (Math.Pow(val1, Double.Parse(txtIO.Text))).ToString();
+                    txtIO.Text = (Math.Pow(val1, float.Parse(txtIO.Text))).ToString();
                     break;
                 case "x^2":
                     txtIO.Text = (Math.Pow(val1, 2)).ToString();
                     break;
+                case "+/-":
+                    txtIO.Text = (val1 * (-1)).ToString();
+                    break; 
                 default:
                     break;
             }
-            
+            op_press = true; 
         }
 
         private void txtIO_TextChanged(object sender, EventArgs e)
@@ -120,25 +156,6 @@ namespace robbinsCalculator
         
         
         }
-
-
-
-
-        /*private void robbinsCalculator_KeyPress(object sender, KeyPressEventArgs e)
-       {
-           //throw new NotImplementedException();
-           switch ((int)e.KeyChar) // statement to handle each key press
-           {
-               case 48: //ascii code = 0 
-                   //want to save as an operand of the equation
-                   break; //need break statement so it doesn't accidentally run other statements
-               case 105: //ascii code = i
-                   break;
-                   // case 55: //ascii code = 7
-
-           }
-
-       }*/
     }
 }
 

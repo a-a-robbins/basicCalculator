@@ -37,7 +37,7 @@ namespace robbinsCalculator
             this.btn3 = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnPi = new System.Windows.Forms.Button();
             this.btnSquare = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
@@ -140,15 +140,15 @@ namespace robbinsCalculator
             this.btnMinus.UseVisualStyleBackColor = true;
             this.btnMinus.Click += new System.EventHandler(this.btn_Operator);
             // 
-            // button6
+            // btnPi
             // 
-            this.button6.Location = new System.Drawing.Point(14, 101);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(37, 47);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "!!!";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.btn_Click);
+            this.btnPi.Location = new System.Drawing.Point(14, 101);
+            this.btnPi.Name = "btnPi";
+            this.btnPi.Size = new System.Drawing.Size(37, 47);
+            this.btnPi.TabIndex = 9;
+            this.btnPi.Text = "pi";
+            this.btnPi.UseVisualStyleBackColor = true;
+            this.btnPi.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnSquare
             // 
@@ -278,7 +278,7 @@ namespace robbinsCalculator
             this.btnSign.TabIndex = 25;
             this.btnSign.Text = "+/-";
             this.btnSign.UseVisualStyleBackColor = true;
-            this.btnSign.Click += new System.EventHandler(this.btn_Click);
+            this.btnSign.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btn7
             // 
@@ -351,7 +351,7 @@ namespace robbinsCalculator
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btnSquare);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnPi);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btn3);
@@ -379,7 +379,7 @@ namespace robbinsCalculator
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnMinus;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button btnSquare;
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn5;
