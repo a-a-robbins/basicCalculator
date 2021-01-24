@@ -358,8 +358,8 @@ namespace robbinsCalculator
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.txtIO);
             this.Controls.Add(this.btnCalc);
+            this.Controls.Add(this.txtIO);
             this.KeyPreview = true;
             this.Name = "robbinsCalculator";
             this.Text = "robbinsCalculator";
