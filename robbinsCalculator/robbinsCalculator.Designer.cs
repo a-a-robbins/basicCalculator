@@ -31,7 +31,6 @@ namespace robbinsCalculator
         {
             this.btnCalc = new System.Windows.Forms.Button();
             this.txtIO = new System.Windows.Forms.TextBox();
-            this.lblIO = new System.Windows.Forms.Label();
             this.btnDel = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
@@ -56,51 +55,44 @@ namespace robbinsCalculator
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
+            this.lblEq = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalc
             // 
             this.btnCalc.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCalc.Location = new System.Drawing.Point(253, 373);
+            this.btnCalc.Location = new System.Drawing.Point(14, 361);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(252, 56);
             this.btnCalc.TabIndex = 0;
             this.btnCalc.Text = "Calculate!";
             this.btnCalc.UseVisualStyleBackColor = true;
-            this.btnCalc.Click += new System.EventHandler(this.btn_Click);
+            this.btnCalc.Click += new System.EventHandler(this.btn_Calculate);
             // 
             // txtIO
             // 
-            this.txtIO.Location = new System.Drawing.Point(253, 34);
+            this.txtIO.Location = new System.Drawing.Point(14, 22);
             this.txtIO.Multiline = true;
             this.txtIO.Name = "txtIO";
             this.txtIO.Size = new System.Drawing.Size(252, 60);
             this.txtIO.TabIndex = 1;
             this.txtIO.Text = "0";
             this.txtIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblIO
-            // 
-            this.lblIO.AutoSize = true;
-            this.lblIO.Location = new System.Drawing.Point(342, 9);
-            this.lblIO.Name = "lblIO";
-            this.lblIO.Size = new System.Drawing.Size(68, 13);
-            this.lblIO.TabIndex = 2;
-            this.lblIO.Text = "Input/Output";
+            this.txtIO.TextChanged += new System.EventHandler(this.txtIO_TextChanged);
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(468, 113);
+            this.btnDel.Location = new System.Drawing.Point(229, 101);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(37, 47);
             this.btnDel.TabIndex = 3;
             this.btnDel.Text = "del";
             this.btnDel.UseVisualStyleBackColor = true;
-            this.btnDel.Click += new System.EventHandler(this.btn_Click);
+            this.btnDel.Click += new System.EventHandler(this.btn_Clear);
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(253, 175);
+            this.btn1.Location = new System.Drawing.Point(14, 163);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(37, 47);
             this.btn1.TabIndex = 4;
@@ -110,7 +102,7 @@ namespace robbinsCalculator
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(296, 175);
+            this.btn2.Location = new System.Drawing.Point(57, 163);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(37, 47);
             this.btn2.TabIndex = 5;
@@ -120,7 +112,7 @@ namespace robbinsCalculator
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(339, 175);
+            this.btn3.Location = new System.Drawing.Point(100, 163);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(37, 47);
             this.btn3.TabIndex = 6;
@@ -130,27 +122,27 @@ namespace robbinsCalculator
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(425, 175);
+            this.btnAdd.Location = new System.Drawing.Point(186, 163);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(37, 47);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btn_Click);
+            this.btnAdd.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(468, 175);
+            this.btnMinus.Location = new System.Drawing.Point(229, 163);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(37, 47);
             this.btnMinus.TabIndex = 8;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
-            this.btnMinus.Click += new System.EventHandler(this.btn_Click);
+            this.btnMinus.Click += new System.EventHandler(this.btn_Operator);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(253, 113);
+            this.button6.Location = new System.Drawing.Point(14, 101);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(37, 47);
             this.button6.TabIndex = 9;
@@ -160,17 +152,17 @@ namespace robbinsCalculator
             // 
             // btnSquare
             // 
-            this.btnSquare.Location = new System.Drawing.Point(382, 239);
+            this.btnSquare.Location = new System.Drawing.Point(143, 227);
             this.btnSquare.Name = "btnSquare";
             this.btnSquare.Size = new System.Drawing.Size(37, 47);
             this.btnSquare.TabIndex = 10;
             this.btnSquare.Text = "x^2";
             this.btnSquare.UseVisualStyleBackColor = true;
-            this.btnSquare.Click += new System.EventHandler(this.btn_Click);
+            this.btnSquare.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(339, 239);
+            this.btn6.Location = new System.Drawing.Point(100, 227);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(37, 47);
             this.btn6.TabIndex = 11;
@@ -180,7 +172,7 @@ namespace robbinsCalculator
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(296, 239);
+            this.btn5.Location = new System.Drawing.Point(57, 227);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(37, 47);
             this.btn5.TabIndex = 12;
@@ -190,7 +182,7 @@ namespace robbinsCalculator
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(253, 239);
+            this.btn4.Location = new System.Drawing.Point(14, 227);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(37, 47);
             this.btn4.TabIndex = 13;
@@ -200,77 +192,77 @@ namespace robbinsCalculator
             // 
             // btnPow
             // 
-            this.btnPow.Location = new System.Drawing.Point(382, 175);
+            this.btnPow.Location = new System.Drawing.Point(143, 163);
             this.btnPow.Name = "btnPow";
             this.btnPow.Size = new System.Drawing.Size(37, 47);
             this.btnPow.TabIndex = 14;
             this.btnPow.Text = "x^y";
             this.btnPow.UseVisualStyleBackColor = true;
-            this.btnPow.Click += new System.EventHandler(this.btn_Click);
+            this.btnPow.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btnSqrt
             // 
-            this.btnSqrt.Location = new System.Drawing.Point(296, 113);
+            this.btnSqrt.Location = new System.Drawing.Point(57, 101);
             this.btnSqrt.Name = "btnSqrt";
             this.btnSqrt.Size = new System.Drawing.Size(37, 47);
             this.btnSqrt.TabIndex = 15;
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = true;
-            this.btnSqrt.Click += new System.EventHandler(this.btn_Click);
+            this.btnSqrt.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btn1DivX
             // 
-            this.btn1DivX.Location = new System.Drawing.Point(339, 113);
+            this.btn1DivX.Location = new System.Drawing.Point(100, 101);
             this.btn1DivX.Name = "btn1DivX";
             this.btn1DivX.Size = new System.Drawing.Size(37, 47);
             this.btn1DivX.TabIndex = 16;
             this.btn1DivX.Text = "1/x";
             this.btn1DivX.UseVisualStyleBackColor = true;
-            this.btn1DivX.Click += new System.EventHandler(this.btn_Click);
+            this.btn1DivX.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(382, 113);
+            this.btnC.Location = new System.Drawing.Point(143, 101);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(37, 47);
             this.btnC.TabIndex = 17;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
-            this.btnC.Click += new System.EventHandler(this.btn_Click);
+            this.btnC.Click += new System.EventHandler(this.btn_Clear);
             // 
             // btnCE
             // 
-            this.btnCE.Location = new System.Drawing.Point(425, 113);
+            this.btnCE.Location = new System.Drawing.Point(186, 101);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(37, 47);
             this.btnCE.TabIndex = 18;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = true;
-            this.btnCE.Click += new System.EventHandler(this.btn_Click);
+            this.btnCE.Click += new System.EventHandler(this.btn_Clear);
             // 
             // btnMult
             // 
-            this.btnMult.Location = new System.Drawing.Point(425, 239);
+            this.btnMult.Location = new System.Drawing.Point(186, 227);
             this.btnMult.Name = "btnMult";
             this.btnMult.Size = new System.Drawing.Size(37, 47);
             this.btnMult.TabIndex = 19;
             this.btnMult.Text = "*";
             this.btnMult.UseVisualStyleBackColor = true;
-            this.btnMult.Click += new System.EventHandler(this.btn_Click);
+            this.btnMult.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btnDiv
             // 
-            this.btnDiv.Location = new System.Drawing.Point(468, 239);
+            this.btnDiv.Location = new System.Drawing.Point(229, 227);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(37, 47);
             this.btnDiv.TabIndex = 20;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
-            this.btnDiv.Click += new System.EventHandler(this.btn_Click);
+            this.btnDiv.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btnDec
             // 
-            this.btnDec.Location = new System.Drawing.Point(468, 306);
+            this.btnDec.Location = new System.Drawing.Point(229, 294);
             this.btnDec.Name = "btnDec";
             this.btnDec.Size = new System.Drawing.Size(37, 47);
             this.btnDec.TabIndex = 26;
@@ -280,7 +272,7 @@ namespace robbinsCalculator
             // 
             // btnSign
             // 
-            this.btnSign.Location = new System.Drawing.Point(425, 306);
+            this.btnSign.Location = new System.Drawing.Point(186, 294);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(37, 47);
             this.btnSign.TabIndex = 25;
@@ -290,7 +282,7 @@ namespace robbinsCalculator
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(253, 306);
+            this.btn7.Location = new System.Drawing.Point(14, 294);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(37, 47);
             this.btn7.TabIndex = 24;
@@ -300,7 +292,7 @@ namespace robbinsCalculator
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(296, 306);
+            this.btn8.Location = new System.Drawing.Point(57, 294);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(37, 47);
             this.btn8.TabIndex = 23;
@@ -310,7 +302,7 @@ namespace robbinsCalculator
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(339, 306);
+            this.btn9.Location = new System.Drawing.Point(100, 294);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(37, 47);
             this.btn9.TabIndex = 22;
@@ -320,7 +312,7 @@ namespace robbinsCalculator
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(382, 306);
+            this.btn0.Location = new System.Drawing.Point(143, 294);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(37, 47);
             this.btn0.TabIndex = 21;
@@ -328,11 +320,20 @@ namespace robbinsCalculator
             this.btn0.UseVisualStyleBackColor = true;
             this.btn0.Click += new System.EventHandler(this.btn_Click);
             // 
+            // lblEq
+            // 
+            this.lblEq.AutoSize = true;
+            this.lblEq.Location = new System.Drawing.Point(16, 25);
+            this.lblEq.Name = "lblEq";
+            this.lblEq.Size = new System.Drawing.Size(0, 13);
+            this.lblEq.TabIndex = 27;
+            // 
             // robbinsCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 444);
+            this.ClientSize = new System.Drawing.Size(280, 444);
+            this.Controls.Add(this.lblEq);
             this.Controls.Add(this.btnDec);
             this.Controls.Add(this.btnSign);
             this.Controls.Add(this.btn7);
@@ -357,7 +358,6 @@ namespace robbinsCalculator
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.lblIO);
             this.Controls.Add(this.txtIO);
             this.Controls.Add(this.btnCalc);
             this.KeyPreview = true;
@@ -373,7 +373,6 @@ namespace robbinsCalculator
 
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.TextBox txtIO;
-        private System.Windows.Forms.Label lblIO;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
@@ -398,6 +397,7 @@ namespace robbinsCalculator
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Label lblEq;
     }
 }
 
